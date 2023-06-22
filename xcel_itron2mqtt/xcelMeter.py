@@ -201,7 +201,7 @@ class xcelMeter():
 
         Returns: None
         """
-        state_topic = f'homeassistant/device/energy/{self.name.replace(" ", "_").lower()}'
+        state_topic = f'itron/{self._lfdi}/{self.name.replace(" ", "_").lower()}'
         config_dict = {
             "name": self.name,
             "device_class": "energy",
